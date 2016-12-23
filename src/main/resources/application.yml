@@ -5,8 +5,8 @@ spring:
     name: premise-service 
 
 sidecar:
-  port: 8000 
-  health-uri: http://localhost:8000/health
+  port: 8080
+  health-uri: http://0.0.0.0:8080/health
   
 eureka:
   client:
