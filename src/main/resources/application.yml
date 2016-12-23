@@ -2,7 +2,7 @@ server:
   port: 9999 
 spring:
   application:
-    name: premise-service 
+    name: uk-code-service 
 
 sidecar:
   port: 8080
