@@ -2,11 +2,12 @@ server:
   port: 9999 
 spring:
   application:
-    name: uk-code-service 
-
+    name: uk-code-service
+      
 sidecar:
-  port: 8080
-  health-uri: http://0.0.0.0:8080/health
+  hostname: ukcode
+  port: 8082
+  health-url: http://10.99.100.13:${sidecar.port}/health
   
 eureka:
   client:
