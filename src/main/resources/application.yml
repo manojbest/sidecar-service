@@ -7,7 +7,7 @@ spring:
 sidecar:
   hostname: ukcode
   port: 8082
-  health-url: http://10.99.100.13:${sidecar.port}/health
+  health-url: http://${sidecar.ukcode}:${sidecar.port}/health
   
 eureka:
   client:
